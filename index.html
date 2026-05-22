@@ -1,16 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TokenFlow Saúde | Gestão Inteligente para Clínicas</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TokenFlow Saúde | Gestão Inteligente para Clínicas</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -376,253 +374,279 @@
                 font-size: 34px;
             }
         }
-    </style>
+    
+        .lead-form {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 15px 40px rgba(0,0,0,.08);
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .lead-form h3 {
+            margin-bottom: 10px;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .lead-form p {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .lead-form input,
+        .lead-form textarea,
+        .lead-form select {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        .lead-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .lead-form button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        @media(max-width:768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+</style>
 </head>
-
 <body>
-
-    <header>
-        <div class="container nav">
-            <div class="logo">TokenFlow <span>Saúde</span></div>
-
-            <nav class="menu">
-                <a href="#inicio">Início</a>
-                <a href="#solucoes">Soluções</a>
-                <a href="#beneficios">Benefícios</a>
-                <a href="#telas">Sistema</a>
-                <a href="#faq">FAQ</a>
-                <a href="https://wa.me/5521982156293" class="btn">Solicitar Demo</a>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero" id="inicio">
-        <div class="container hero-grid">
-
-            <div>
-                <div class="badge">Gestão inteligente para clínicas credenciadas</div>
-
-                <h1>Sua clínica perdendo autorizações sem perceber?</h1>
-
-                <p>
+<header>
+<div class="container nav">
+<div class="logo">TokenFlow <span>Saúde</span></div>
+<nav class="menu">
+<a href="#inicio">Início</a>
+<a href="#solucoes">Soluções</a><a href="#prevenda">Pré-venda</a>
+<a href="#beneficios">Benefícios</a>
+<a href="#telas">Sistema</a>
+<a href="#faq">FAQ</a>
+<a class="btn" href="https://wa.me/5521982156293">Solicitar Demo</a>
+</nav>
+</div>
+</header>
+<section class="hero" id="inicio">
+<div class="container hero-grid">
+<div>
+<div class="badge">Gestão inteligente para clínicas credenciadas</div>
+<h1>Sua clínica perdendo autorizações sem perceber?</h1>
+<p>
                     Controle tokens, sessões, laudos médicos, auditorias e frequência de pacientes em um único sistema
                     moderno.
                 </p>
-
-                <div class="hero-buttons">
-                    <a href="https://wa.me/5521982156293" class="btn btn-light">Agendar Demonstração</a>
-                    <a href="#telas" class="btn btn-outline">Ver Sistema</a>
-                </div>
-            </div>
-
-            <div class="dashboard">
-                <h3>Painel Operacional</h3>
-
-                <div class="stats">
-                    <div class="card">
-                        <h2>Grades Ativas</h2>
-                        <strong>362</strong>
-                        <h4>sessões/semana</h4>
-                    </div>
-
-                    <div class="card">
-                        <h2>Tokens no Mês</h2>
-                        <strong>332</strong>
-                        <h4>de 1565 previstos</h4>
-                    </div>
-
-                    <div class="card">
-                        <h2>Atendidos</h2>
-                        <strong>332</strong>
-                        <h4>73% do total</h4>
-                    </div>
-
-                    <div class="card">
-                        <h2>Faltas</h2>
-                        <strong>112</strong>
-                        <h4>26% do total</h4>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="solucoes">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Tudo que sua operação precisa</h2>
-                <p>
+<div class="hero-buttons">
+<a class="btn btn-light" href="https://wa.me/5521982156293">Agendar Demonstração</a>
+<a class="btn btn-outline" href="#telas">Ver Sistema</a>
+</div>
+</div>
+<div class="dashboard">
+<h3>Painel Operacional</h3>
+<div class="stats">
+<div class="card">
+<h2>Grades Ativas</h2>
+<strong>362</strong>
+<h4>sessões/semana</h4>
+</div>
+<div class="card">
+<h2>Tokens no Mês</h2>
+<strong>332</strong>
+<h4>de 1565 previstos</h4>
+</div>
+<div class="card">
+<h2>Atendidos</h2>
+<strong>332</strong>
+<h4>73% do total</h4>
+</div>
+<div class="card">
+<h2>Faltas</h2>
+<strong>112</strong>
+<h4>26% do total</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="solucoes">
+<div class="container">
+<div class="section-title">
+<h2>Tudo que sua operação precisa</h2>
+<p>
                     Automatize processos críticos e elimine falhas administrativas que geram prejuízo.
                 </p>
-            </div>
-
-            <div class="grid-3">
-
-                <div class="feature">
-                    <h3>Controle de Tokens</h3>
-                    <p>Gerencie autorizações emitidas, confronte com atendimentos realizados.</p>
-                </div>
-
-                <div class="feature">
-                    <h3>Conciliação Inteligente</h3>
-                    <p>Cruza atendimentos previstos x realizados x autorizados x auditados.</p>
-                </div>
-
-                <div class="feature">
-                    <h3>Gestão de Sessões</h3>
-                    <p>Visualização do paciente, laudo e autorizaçao em um só lugar.</p>
-                </div>
-
-                <div class="feature">
-                    <h3>Laudos Médicos</h3>
-                    <p>Emissão, validade, comparativo entre sessões realizadas e senha alfanumerica</p>
-                </div>
-
-                <div class="feature">
-                    <h3>Consolidação de auditoria</h3>
-                    <p>Comparação entre o realizado, cobrado e o que será pago.</p>
-                </div>
-
-                <div class="feature">
-                    <h3>Dashboard Gerencial</h3>
-                    <p>Indicadores estratégicos.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="beneficios">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Resultados Reais Para Sua Clínica</h2>
-                <p>Mais controle, menos retrabalho e crescimento com organização.</p>
-            </div>
-
-            <div class="grid-3">
-
-                <div class="feature">
-                    <h3>Mais Receita</h3>
-                    <p>Evita perdas por sessões não autorizadas ou não autenticadas.</p>
-                </div>
-
-                <div class="feature">
-                    <h3>Produtividade</h3>
-                    <p>Equipe trabalha com processos rápidos.</p>
-                </div>
-
-                <div class="feature">
-                    <h3>Segurança</h3>
-                    <p>Informações centralizadas e confiáveis.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="telas">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Veja o Sistema na Prática</h2>
-                <p>Clique nas imagens para ampliar com zoom.</p>
-            </div>
-
-            <div class="gallery">
-                <img src="foto1.png"
-                    onclick="openModal(this.src)">
-                <img src="foto2.png"
-                    onclick="openModal(this.src)">
-                <img src="foto3.png"
-                    onclick="openModal(this.src)">
-            </div>
-
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="cta" id="contato">
-                <h2>Sua operação merece gestão profissional</h2>
-                <p>
+</div>
+<div class="grid-3">
+<div class="feature">
+<h3>Controle de Tokens</h3>
+<p>Gerencie autorizações emitidas, confronte com atendimentos realizados.</p>
+</div>
+<div class="feature">
+<h3>Conciliação Inteligente</h3>
+<p>Cruza atendimentos previstos x realizados x autorizados x auditados.</p>
+</div>
+<div class="feature">
+<h3>Gestão de Sessões</h3>
+<p>Visualização do paciente, laudo e autorizaçao em um só lugar.</p>
+</div>
+<div class="feature">
+<h3>Laudos Médicos</h3>
+<p>Emissão, validade, comparativo entre sessões reaizadas e senha alfanumerica</p>
+</div>
+<div class="feature">
+<h3>Consolidação de auditoria</h3>
+<p>Comparação entre o realizado, cobrado e o que será pago.</p>
+</div>
+<div class="feature">
+<h3>Dashboard Gerencial</h3>
+<p>Indicadores estratégicos.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="beneficios">
+<div class="container">
+<div class="section-title">
+<h2>Resultados Reais Para Sua Clínica</h2>
+<p>Mais controle, menos retrabalho e crescimento com organização.</p>
+</div>
+<div class="grid-3">
+<div class="feature">
+<h3>Mais Receita</h3>
+<p>Evita perdas por sessões não autorizadas ou não autenticadas.</p>
+</div>
+<div class="feature">
+<h3>Produtividade</h3>
+<p>Equipe trabalha com processos rápidos.</p>
+</div>
+<div class="feature">
+<h3>Segurança</h3>
+<p>Informações centralizadas e confiáveis.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="telas">
+<div class="container">
+<div class="section-title">
+<h2>Veja o Sistema na Prática</h2>
+<p>Clique nas imagens para ampliar com zoom.</p>
+</div>
+<div class="gallery">
+<img onclick="openModal(this.src)" src="foto1.png"/>
+<img onclick="openModal(this.src)" src="foto2.png"/>
+<img onclick="openModal(this.src)" src="foto3.png"/>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="cta" id="contato">
+<h2>Sua operação merece gestão profissional</h2>
+<p>
                     Pare de depender de planilhas e conferências manuais. Tenha uma clínica moderna e preparada para
                     crescer.
                 </p>
+<a class="btn btn-light" href="https://wa.me/5521982156293">Falar no WhatsApp</a>
+</div>
+</div>
+</section>
 
-                <a href="https://wa.me/5521982156293" class="btn btn-light">Falar no WhatsApp</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Perguntas Frequentes</h2>
-            </div>
-
-            <div class="faq">
-
-                <details>
-                    <summary>Precisa instalar?</summary>
-                    <p>Não. O sistema funciona online.</p>
-                </details>
-
-                <details>
-                    <summary>Posso acessar de qualquer lugar?</summary>
-                    <p>Sim. Em computador, notebook ou celular.</p>
-                </details>
-
-                <details>
-                    <summary>Minha clínica é pequena, vale a pena?</summary>
-                    <p>Sim. Pequenas equipes ganham produtividade rapidamente.</p>
-                </details>
-
-                <details>
-                    <summary>Tem suporte?</summary>
-                    <p>Sim. Suporte e acompanhamento inicial.</p>
-                </details>
-
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
-        <div class="container footer-grid">
-
-            <div>
-                <h4>TokenFlow Saúde</h4>
-                <p>Sistema inteligente de gestão operacional para clínicas credenciadas.</p>
-            </div>
-
-            <div>
-                <h4>Links</h4>
-                <a href="#inicio">Início</a>
-                <a href="#solucoes">Soluções</a>
-                <a href="#faq">FAQ</a>
-            </div>
-
-            <div>
-                <h4>Contato</h4>
-                <a href="#">WhatsApp</a>
-                <a href="#">Email</a>
-            </div>
-
-        </div>
-    </footer>
-
-    <a href="https://wa.me/5521982156293" class="whatsapp">WhatsApp</a>
-
-    <div class="modal" id="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modalImg">
-    </div>
-
-    <script>
+<section id="prevenda">
+<div class="container">
+<div class="lead-form">
+<h3>Participe da Pré-venda</h3>
+<p>
+                Estamos selecionando clínicas parceiras para os primeiros testes e implantação do TokenFlow Saúde.
+            </p>
+<form id="whatsappForm">
+<div class="form-grid">
+<input id="nome" placeholder="Seu nome" required="" type="text"/>
+<input id="clinica" placeholder="Nome da clínica" required="" type="text"/>
+</div>
+<div class="form-grid" style="margin-top:20px;">
+<input id="cargo" placeholder="Seu cargo" type="text"/>
+<input id="telefone" placeholder="WhatsApp" type="tel"/>
+</div>
+<div style="margin-top:20px;">
+<textarea id="mensagem" placeholder="Conte rapidamente sua principal dificuldade hoje com auditoria, tokens ou faturamento."></textarea>
+</div>
+<button class="btn" type="submit">
+                    Quero conhecer o TokenFlow Saúde
+                </button>
+</form>
+</div>
+</div>
+</section>
+<section id="faq">
+<div class="container">
+<div class="section-title">
+<h2>Perguntas Frequentes</h2>
+</div>
+<div class="faq">
+<details>
+<summary>Precisa instalar?</summary>
+<p>Não. O sistema funciona online.</p>
+</details>
+<details>
+<summary>Posso acessar de qualquer lugar?</summary>
+<p>Sim. Em computador, notebook ou celular.</p>
+</details>
+<details>
+<summary>Minha clínica é pequena, vale a pena?</summary>
+<p>Sim. Pequenas equipes ganham produtividade rapidamente.</p>
+</details>
+<details>
+<summary>Tem suporte?</summary>
+<p>Sim. Suporte e acompanhamento inicial.</p>
+</details>
+</div>
+</div>
+</section>
+<footer>
+<div class="container footer-grid">
+<div>
+<h4>TokenFlow Saúde</h4>
+<p>Sistema inteligente de gestão operacional para clínicas credenciadas.</p>
+</div>
+<div>
+<h4>Links</h4>
+<a href="#inicio">Início</a>
+<a href="#solucoes">Soluções</a>
+<a href="#faq">FAQ</a>
+</div>
+<div>
+<h4>Contato</h4>
+<a href="#">WhatsApp</a>
+<a href="#">Email</a>
+</div>
+</div>
+</footer>
+<a class="whatsapp" href="https://wa.me/5521982156293">WhatsApp</a>
+<div class="modal" id="modal">
+<span class="close" onclick="closeModal()">×</span>
+<img id="modalImg"/>
+</div>
+<script>
         function openModal(src) {
             document.getElementById("modal").style.display = "flex";
             document.getElementById("modalImg").src = src;
@@ -638,8 +662,26 @@
                 closeModal();
             }
         }
-    </script>
+    
 
+        document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const nome = document.getElementById("nome").value;
+            const clinica = document.getElementById("clinica").value;
+            const cargo = document.getElementById("cargo").value;
+            const telefone = document.getElementById("telefone").value;
+            const mensagem = document.getElementById("mensagem").value;
+
+            const texto = `Olá! Tenho interesse no TokenFlow Saúde.%0A%0A` +
+                `Nome: ${nome}%0A` +
+                `Clínica: ${clinica}%0A` +
+                `Cargo: ${cargo}%0A` +
+                `Telefone: ${telefone}%0A%0A` +
+                `Dificuldade atual:%0A${mensagem}`;
+
+            window.open(`https://wa.me/5521982156293?text=${texto}`, '_blank');
+        });
+</script>
 </body>
-
 </html>
